@@ -1,6 +1,6 @@
 ---
 title: "Setting up DNS and an Apache origin server for Akamai"
-layout: layouts/base.njk
+layout: layouts/skeleton.njk
 tags: drafts
 ---
 

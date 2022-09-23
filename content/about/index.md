@@ -1,6 +1,6 @@
 ---
-title: Robin Marx's Blog - About Me
-layout: layouts/base.njk
+title: About Me
+layout: layouts/skeleton.njk
 ---
 
 # About Robin

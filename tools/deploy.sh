@@ -2,6 +2,15 @@
 # cd content/
 # npm build
 # ../tools/deploy.sh
-echo "Copying _site to /var/www/internetonmars_org/"
-rm -rf /var/www/internetonmars_org/*
-cp -R _site/* /var/www/internetonmars_org
+# OR ../tools/deploy.sh --production
+
+if [ "$1" == "--production" ]; then
+    echo "PRODUCTION: Copying _site to /var/www/internetonmars_org/"
+    rm -rf /var/www/internetonmars_org/*
+    cp -R _site/* /var/www/internetonmars_org
+else
+    echo "STAGING: Copying _site to /var/www/internetonmars_org/staging/"
+    rm -rf /var/www/internetonmars_org/staging/*
+    mkdir -p /var/www/internetonmars_org/staging
+    cp -R _site/* /var/www/internetonmars_org/staging
+fi

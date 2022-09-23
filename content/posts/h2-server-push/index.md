@@ -1,6 +1,6 @@
 ---
 title: "HTTP/2 Push : The Details"
-layout: layouts/base.njk
+layout: layouts/skeleton.njk
 tags: posts
 ---
 
